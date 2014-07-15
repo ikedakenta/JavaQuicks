@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<META name="GENERATOR" content="IBM WebSphere Homepage Builder V6.0.1 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<title>クイックス～(´Д｀)</title></head>
+<body bgcolor=black text=white>
+
+<!--<bgsound src="sound/quicks.mid" loop=-1>-->
+
+<P><FONT color="#3300ff"><B><FONT size="+4">クイックス</FONT></B></FONT><BR>
+キーボードを押しても自機が動いてくれないときは画面内をマウスでクリックしてください。<BR>
+フォーカスが移り、自機が操作できるようになります。<BR>
+
+自機は最初一番左上にいます。矢印キーで　自機の操作。<BR>
+CTRL押しながら切り出せます。　囲んだ陣地は自領域に・・・<BR>
+敵を自領域に囲い込むと殺せます。　　ただし、敵に自分、もしくは切り取り中の緑線が触れても死亡します。<BR>
+全体の75%以上　自領域として囲い込むことでクリアーとなります。<BR>
+キーボードの[R]を押すとゲームを再起動します。<BR>
+
+<APPLET CODE="quicks.class" archive="quicks.jar" width=640 height=480>
+
+<!-- 画像の設定 -->
+<PARAM NAME="player1" VALUE="CG/player1.gif"><!-- 自機の画像 -->
+<PARAM NAME="player1_kiri" VALUE="CG/player1_kiri.gif"><!-- 自機切り取り中の画像 -->
+<PARAM NAME="teki0" VALUE="CG/teki0.gif"><!-- 敵1の画像 -->
+<PARAM NAME="teki1" VALUE="CG/teki1.gif"><!-- 敵2の画像 -->
+<PARAM NAME="teki2" VALUE="CG/teki2.gif"><!-- 敵3の画像 -->
+<PARAM NAME="teki3" VALUE="CG/teki3.gif"><!-- 敵4の画像 -->
+<PARAM NAME="teki4" VALUE="CG/teki3.gif"><!-- 敵5の画像 -->
+<PARAM NAME="teki5" VALUE="CG/teki2.gif"><!-- 敵6の画像 -->
+<PARAM NAME="teki6" VALUE="CG/teki1.gif"><!-- 敵7の画像 -->
+<PARAM NAME="front" VALUE="CG/front.jpg"><!-- ステージ前面画像(切る前の画像) -->
+<PARAM NAME="back" VALUE="CG/back.jpg"><!-- ステージ背景画像(切ったときに見える画像) -->
+<PARAM NAME="gameclear_URL" VALUE="no"><!-- クリアーした後に自動的に飛ぶページのURL、"no"と書いておくと飛ばない -->
+
+<!-- 音の設定 -->
+<PARAM NAME="start" VALUE="sound/start.wav"><!-- ゲーム開始の時にならす音 -->
+<PARAM NAME="stageclear" VALUE="sound/stageclear.wav"><!-- ゲームクリアーの時にならす音 -->
+<PARAM NAME="gameover" VALUE="sound/gameover.wav"><!-- ゲームオーバーの時にならす音 -->
+<PARAM NAME="kiri" VALUE="sound/kiri.wav"><!-- 自機が切り取り移動するときの音 -->
+<PARAM NAME="butukari" VALUE="sound/butukari.wav"><!-- 敵とぶつかって死ぬときの爆発音 -->
+<PARAM NAME="kakomi" VALUE="sound/kakomi.wav"><!-- 自領域を囲んだ時の成功音 -->
+<!-- ゲームコンフィグ設定 -->
+<PARAM NAME="parsent" VALUE="75"><!-- 何%以上切るとクリアーにするか[1～100] -->
+<PARAM NAME="teki_kazu" VALUE="3"><!-- 敵の数[0～7] -->
+<PARAM NAME="teki0_speed" VALUE="4"><!-- 敵1の速さ[1～10] -->
+<PARAM NAME="teki1_speed" VALUE="4"><!-- 敵2の速さ[1～10] -->
+<PARAM NAME="teki2_speed" VALUE="2"><!-- 敵3の速さ[1～10] -->
+<PARAM NAME="teki3_speed" VALUE="3"><!-- 敵4の速さ[1～10] -->
+<PARAM NAME="teki4_speed" VALUE="2"><!-- 敵5の速さ[1～10] -->
+<PARAM NAME="teki5_speed" VALUE="2"><!-- 敵6の速さ[1～10] -->
+<PARAM NAME="teki6_speed" VALUE="1"><!-- 敵7の速さ[1～10] -->
+<PARAM NAME="time" VALUE="1000"><!-- 時間制限[0～1000(秒)] -->
+<PARAM NAME="kisuu" VALUE="1"><!-- 自機ライフポイント[1～99] -->
+<PARAM NAME="stage_clear_massage" VALUE="ステージクリアー！！"><!-- ステージクリアー時のメッセージ -->
+<PARAM NAME="gameover_massage" VALUE="GAME OVER"><!-- ゲームオーバー時のメッセージ -->
+<PARAM NAME="font" VALUE="24"><!-- パラメータ表示、メッセージのフォントサイズ[18～72] -->
+<PARAM NAME="color" VALUE="#FFFF80"><!-- パラメータ表示、メッセージのフォントカラー[#000000～#FFFFFF] -->
+
+</APPLET>
+<P align="right">
+<BR>presented by<BR>
+<A href="http://ikeda.gotdns.com/">
+<img src="CG/bana-.gif"></A></P>
+
+</body></html>
